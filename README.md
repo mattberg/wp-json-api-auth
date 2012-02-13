@@ -2,4 +2,4 @@
 
 Authentication add-on controller for the Wordpress JSON API plugin utilizing the Wordpress cookie validation and generation.
 
-_Wordpress JSON API Plugin: https://github.com/dphiffer/wp-json-api_
+*Wordpress JSON API Plugin: https://github.com/dphiffer/wp-json-api*
