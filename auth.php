@@ -3,7 +3,7 @@
 Controller Name: Auth
 Controller Description: Authentication add-on controller for the Wordpress JSON API plugin
 Controller Author: Matt Berg
-Controller Author Url: http://www.marketnet.com
+Controller Author Twitter: @mattberg
 */
 
 class JSON_API_Auth_Controller {
