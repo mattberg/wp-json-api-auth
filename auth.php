@@ -54,7 +54,7 @@ class JSON_API_Auth_Controller {
 				"id" => $user->ID,
 				"username" => $user->user_login,
 				"nicename" => $user->user_nicename,
-				"email" => $user->user_lastname,
+				"email" => $user->user_email,
 				"url" => $user->user_url,
 				"registered" => $user->user_registered,
 				"displayname" => $user->display_name,
