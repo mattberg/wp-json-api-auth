@@ -40,7 +40,7 @@ class JSON_API_Auth_Controller {
 
     	$user = wp_authenticate($json_api->query->username, $json_api->query->password);
     	if (is_wp_error($user)) {
-    		$json_api->error("Invalid username and/or password.");
+    		$json_api->error("Invalid username and/or password.", 'error', '401');
     		remove_action('wp_login_failed', $json_api->query->username);
     	}
 
