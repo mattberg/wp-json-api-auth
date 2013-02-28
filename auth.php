@@ -27,15 +27,15 @@ class JSON_API_Auth_Controller {
 
 		$nonce_id = $json_api->get_nonce_id('auth', 'generate_auth_cookie');
 		if (!wp_verify_nonce($json_api->query->nonce, $nonce_id)) {
-			$json_api->error("Your 'nonce' value was incorrect. Use the 'get_nonce' API method.", 'error', '400');
+			$json_api->error("Your 'nonce' value was incorrect. Use the 'get_nonce' API method.");
 		}
 
 		if (!$json_api->query->username) {
-			$json_api->error("You must include a 'username' var in your request.", 'error', '400');
+			$json_api->error("You must include a 'username' var in your request.");
 		}
 		
 		if (!$json_api->query->password) {
-			$json_api->error("You must include a 'password' var in your request.", 'error', '400');
+			$json_api->error("You must include a 'password' var in your request.");
 		}		
 
     	$user = wp_authenticate($json_api->query->username, $json_api->query->password);
